@@ -2,7 +2,11 @@ plugins {
     kotlin("multiplatform")
     kotlin("native.cocoapods")
     id("com.android.library")
+    id("convention.publication")
 }
+
+group = "io.github.alibek228k"
+version = "1.0.0"
 
 repositories{
     mavenCentral()
@@ -10,6 +14,7 @@ repositories{
 
 kotlin {
     android {
+        publishLibraryVariants("release", "debug")
         compilations.all {
             kotlinOptions {
                 jvmTarget = "1.8"
@@ -65,5 +70,12 @@ android {
     defaultConfig {
         minSdk = 24
         targetSdk = 33
+    }
+
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
     }
 }

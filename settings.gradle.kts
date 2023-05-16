@@ -6,5 +6,6 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Qbox-media"
+rootProject.name = "qbox-media"
 include(":media")
+includeBuild("convention-plugins")
