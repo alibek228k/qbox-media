@@ -7,9 +7,9 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.OnLifecycleEvent
-import kz.qbox.qbox_media.Bitmap
 import dev.icerock.moko.permissions.Permission
 import dev.icerock.moko.permissions.PermissionsController
+import kz.qbox.qbox_media.Bitmap
 import kz.qbox.qbox_media.FileMedia
 import kz.qbox.qbox_media.Media
 import kotlin.coroutines.suspendCoroutine

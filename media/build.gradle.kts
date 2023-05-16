@@ -4,6 +4,10 @@ plugins {
     id("com.android.library")
 }
 
+repositories{
+    mavenCentral()
+}
+
 kotlin {
     android {
         compilations.all {
@@ -23,22 +27,23 @@ kotlin {
         ios.deploymentTarget = "14.1"
         framework {
             baseName = "shared"
+            isStatic = false
+            export("dev.icerock.moko:permissions:0.16.0")
         }
     }
     
     sourceSets {
         val commonMain by getting {
             dependencies{
-                api("dev.icerock.moko:permissions:0.14.0")
+                api("dev.icerock.moko:permissions:0.16.0")
             }
         }
         val androidMain by getting {
             dependencies{
-                api("dev.icerock.moko:permissions-compose:0.14.0")
-                api("androidx.core:core-ktx:1.10.0")
-                api("androidx.core:core:1.10.0")
-                implementation("androidx.activity:activity-ktx:1.7.0")
-                implementation("androidx.fragment:fragment-ktx:1.5.6")
+                implementation("androidx.core:core-ktx:1.10.1")
+                implementation("androidx.core:core:1.10.1")
+                implementation("androidx.activity:activity-ktx:1.7.1")
+                implementation("androidx.fragment:fragment-ktx:1.5.7")
             }
         }
         val androidUnitTest by getting
@@ -61,7 +66,4 @@ android {
         minSdk = 24
         targetSdk = 33
     }
-}
-dependencies {
-    implementation("androidx.exifinterface:exifinterface:1.3.3")
 }

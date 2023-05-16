@@ -3,8 +3,8 @@ package kz.qbox.qbox_media.picker
 
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
-import kz.qbox.qbox_media.Bitmap
 import dev.icerock.moko.permissions.PermissionsController
+import kz.qbox.qbox_media.Bitmap
 import kz.qbox.qbox_media.FileMedia
 import kz.qbox.qbox_media.Media
 

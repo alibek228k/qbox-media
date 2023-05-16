@@ -4,7 +4,7 @@ package kz.qbox.qbox_media
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.Matrix
-import androidx.exifinterface.media.ExifInterface
+import android.media.ExifInterface
 import java.io.IOException
 import java.io.InputStream
 

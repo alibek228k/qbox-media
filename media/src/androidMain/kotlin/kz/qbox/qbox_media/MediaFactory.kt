@@ -4,11 +4,11 @@ package kz.qbox.qbox_media
 import android.annotation.SuppressLint
 import android.content.ContentResolver
 import android.content.Context
+import android.media.ExifInterface
 import android.media.MediaMetadataRetriever
 import android.net.Uri
 import android.provider.MediaStore
 import android.provider.OpenableColumns
-import androidx.exifinterface.media.ExifInterface
 import kz.qbox.qbox_media.BitmapUtils.getBitmapOrientation
 import kz.qbox.qbox_media.BitmapUtils.getNormalizedBitmap
 import java.io.IOException
